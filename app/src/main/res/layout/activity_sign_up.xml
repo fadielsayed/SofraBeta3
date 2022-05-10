@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".RegisterCutomer.SignUpCustomerActivity">
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="الاسم"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/shop_name"
+        android:background="@drawable/register_view_border"
+        />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="البريد الالكترونى"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/email"
+        android:background="@drawable/register_view_border"/>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="الجوال"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/phone"
+        android:background="@drawable/register_view_border"/>
+
+    <LinearLayout
+        android:layoutDirection="ltr"
+        android:orientation="horizontal"
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center"
+        android:background="@drawable/register_view_border">
+
+        <Spinner
+            android:layout_width="50dp"
+            android:layout_height="match_parent"
+            android:layout_gravity="left"
+            android:id="@+id/spinnerCity"
+            android:layoutDirection="ltr"
+            />
+
+        <EditText
+            android:layoutDirection="rtl"
+            android:layout_width="265dp"
+            android:layout_height="50dp"
+            android:hint="المدينه"
+            android:background="@drawable/register_view_border" />
+
+
+    </LinearLayout>
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="الحى"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/region"
+        android:background="@drawable/register_view_border" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="السكن"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/adresse"
+        android:background="@drawable/register_view_border" />
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="كلمة المرور"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/password"
+        android:background="@drawable/register_view_border" />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="اعادة كلمة المرور"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/confirm_password"
+        android:background="@drawable/register_view_border" />
+
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="40dp"
+        android:padding="8dp"
+        android:text="التالي"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:background="@color/green"
+        android:textColor="#ffffff"
+        android:textSize="20dp"
+        android:textStyle="bold"/>
+</LinearLayout>

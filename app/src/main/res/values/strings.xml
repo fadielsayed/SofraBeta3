@@ -1,0 +1,54 @@
+<resources>
+    <string name="app_name">Sofra</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="aboutApptext"> هناك حقيقه مثبته من زمن طويل وهي ان المحتوى المقروء لصفحه سيلهي القارئ عن التركيز
+    على الشكل الخارجي للنص او شكل توضع الفقرات في الصفحه التي يقراها ولذلك يتم استخدام طريقه لوريم ايبسوم لأنها تعطي
+    توزيعا طبيعيا الى حد ما للأحرف عوضا عن استخدام "هنا يوجد محتوى نصي , هنا يوجد محتوى نصي "
+    فتجعلها تبدو (اي احرف) وكأنها نص مقروء
+
+    العديد من برامج النشر المكتبي وبرامج تحرير صفحات الويب تستخد لوريم ايبسوم كنموزج اساسي عن النص  </string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_main_person_navigation">MainPersonNavigation</string>
+
+    <string name="home">الصفحة الرئيسيه</string>
+    <string name="orders">منتجاتى</string>
+    <string name="notify">الطلبات المقدمه</string>
+    <string name="price">العموله</string>
+    <string name="news">عروضى</string>
+    <string name="about_app">عن التطبيق</string>
+    <string name="condition">الشروط و الأحكام</string>
+    <string name="share">شارك التطبيق</string>
+    <string name="call_us">تواصل معنا</string>
+
+
+    <string-array name="nav_drawer_items">
+        <item>الصفحة الرئيسيه</item>
+        <item>منتجاتى</item>
+        <item>الطلبات المقدمه</item>
+        <item>العموله</item>
+        <item>عروضى</item>
+        <item>عن التطبيق</item>
+        <item>الشروط و الأحكام</item>
+        <item>شارك التطبيق</item>
+        <item>تواصل معنا</item>
+    </string-array>
+    <array name="nav_drawer_icons">
+        <item>@mipmap/home</item>
+        <item>@mipmap/orders</item>
+        <item>@mipmap/notify</item>
+        <item>@mipmap/price</item>
+        <item>@mipmap/offers</item>
+        <item>@mipmap/about</item>
+        <item>@mipmap/terms</item>
+        <item>@mipmap/share</item>
+        <item>@mipmap/contact</item>
+    </array>
+</resources>
+

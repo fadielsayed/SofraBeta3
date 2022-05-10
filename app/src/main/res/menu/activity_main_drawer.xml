@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group1">
+        <item
+            android:id="@+id/homemenu_ID"
+            android:icon="@mipmap/home"
+            android:title="الصفحة الرئيسيه" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group2">
+        <item
+            android:id="@+id/ordersmenu_ID"
+            android:icon="@mipmap/orders"
+            android:title="طلباتي" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group3">
+        <item
+            android:id="@+id/notifymenu_ID"
+            android:icon="@mipmap/notify"
+            android:title="التنبيهات" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group5">
+        <item
+            android:id="@+id/newOffersmenu_ID"
+            android:icon="@mipmap/offers"
+            android:title="جديد العروض" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group6">
+        <item
+            android:id="@+id/aboutaAppmenu_ID"
+            android:icon="@mipmap/about"
+            android:title="عن التطبيق" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group8">
+        <item
+            android:id="@+id/termsmenu_ID"
+            android:icon="@mipmap/terms"
+            android:title="الشروط و الأحكام" />
+    </group>
+
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group9">
+        <item
+            android:id="@+id/sharemenu_ID"
+            android:icon="@mipmap/share"
+            android:title="شارك التطبيق" />
+    </group>
+    <group
+        android:checkableBehavior="single"
+        android:id="@+id/group10">
+        <item
+            android:id="@+id/call_usmenu_ID"
+            android:icon="@mipmap/contact"
+            android:title="تواصل معنا" />
+    </group>
+
+
+</menu>

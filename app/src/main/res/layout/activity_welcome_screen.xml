@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@mipmap/welcomebackground"
+    tools:context=".WelcomeScreen.WelcomeScreenActivity">
+
+    <ImageButton
+        android:layout_width="170dp"
+        android:layout_height="170dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="100dp"
+        android:background="@mipmap/welcomebackground"
+        android:src="@mipmap/logo"
+        />
+    <TextView
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="18sp"
+        android:text="التطبيق الاول لبيع وطلب الطعام المنزلي"
+        android:textColor="#fff"
+        />
+
+    <Button
+        android:id="@+id/orderButton_ID"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="30dp"
+        android:text="طلب طعام"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/yello"
+        />
+
+    <Button
+        android:id="@+id/sellButton_ID"
+        android:layout_width="300dp"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="25dp"
+        android:text="بيع طعام"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:background="@color/yello"
+        />
+
+    <LinearLayout
+        android:layout_marginTop="40dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_gravity="center"
+        android:gravity="center"
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/instagram_ID"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/instagram"
+            android:layout_marginRight="15dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/twiter_ID"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:src="@mipmap/twiter"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+
+    </LinearLayout>
+
+
+</LinearLayout>

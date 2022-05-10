@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layoutDirection="ltr"
+    android:layout_height="wrap_content">
+
+
+    <LinearLayout
+        android:layout_weight="0.5"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="100dp">
+
+        <TextView
+            android:textColor="@color/yello"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="رقم الطلب : 32456"
+            />
+
+
+    </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_marginRight="10dp"
+            android:orientation="vertical"
+            android:layout_width="0dp"
+            android:layout_height="100dp"
+            android:layout_weight="1"
+            >
+            <TextView
+                android:id="@+id/exsistingordername_ID"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:textStyle="bold"
+                android:layout_height="wrap_content"
+                android:layout_gravity="right"
+                android:text="تاج الفطيره الدمشقيه" />
+
+
+
+            <TextView
+                android:layout_gravity="right"
+                android:layout_marginTop="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="الحد الادنى للطلب : 60ريال"
+                android:textSize="10sp"
+                />
+
+            <TextView
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="رسوم التوصيل  : 10ريال"
+                android:textSize="10sp"
+                />
+            <TextView
+                android:layout_gravity="right"
+                android:layout_marginTop="5dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="مده تجهيز الطلب : يوم واحد"
+                android:textSize="10sp"
+                />
+
+        </LinearLayout>
+
+
+
+        <ImageView
+            android:layout_marginRight="10dp"
+            android:id="@+id/exsistingorderimage_ID"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:layout_gravity="right|center"
+            android:src="@mipmap/home" />
+
+
+    </LinearLayout>
+

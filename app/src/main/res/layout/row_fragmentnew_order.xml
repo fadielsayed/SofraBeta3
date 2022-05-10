@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+    <android.support.v7.widget.CardView
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        app:cardCornerRadius="3dp"
+        app:cardElevation="3dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/basicRelative">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/relative_food">
+
+                    <ImageView
+                        android:layout_width="90dp"
+                        android:layout_height="90dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_alignParentRight="true"
+                        android:id="@+id/food_image"
+                        android:background="#ece9e9"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/food_image"
+                        android:layout_marginTop="10dp"
+                        android:text="العميل :"
+                        android:id="@+id/client"
+                        android:layout_marginRight="6dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_toLeftOf="@+id/client"
+                        android:layout_marginTop="10dp"
+                        android:text="اسم العميل"
+                        android:id="@+id/clientName_ID"
+                        android:layout_marginRight="6dp"
+                        android:textColor="@color/black"
+                        android:textStyle="bold"
+                        android:textSize="16dp"/>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:gravity="right|center"
+                        android:background="@color/gray"
+                        android:layout_below="@+id/client"
+                        android:id="@+id/RelativeRequest"
+                        android:layout_toLeftOf="@+id/food_image"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/request"
+                            android:layout_marginRight="6dp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:textSize="12dp"
+                            android:text="الطلب : "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:textColor="@color/black"
+                            android:layout_toLeftOf="@+id/request"
+                            android:id="@+id/requestName"
+                            android:textSize="12dp"
+                            android:text="ساندوتش برجر"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/gray"
+                        android:layout_below="@+id/RelativeRequest"
+                        android:id="@+id/Relative_quantity"
+                        android:gravity="right|center"
+                        android:layout_toLeftOf="@+id/food_image"
+                        android:layout_marginRight="6dp"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/quantity"
+                            android:layout_marginRight="6dp"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:layout_alignParentRight="true"
+                            android:text="الكميه : "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/quantity"
+                            android:id="@+id/quantityNumber"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="1"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/priceText"
+                            android:layout_marginRight="6dp"
+                            android:layout_toRightOf="@+id/price"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="السعر : "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/price"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="ريال"/>
+
+
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/gray"
+                        android:layout_below="@+id/Relative_quantity"
+                        android:id="@+id/Relative_payment"
+                        android:layout_toLeftOf="@+id/food_image"
+                        android:layout_marginRight="6dp"
+                        android:gravity="right|center"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/deliveryPayment"
+                            android:layout_alignParentRight="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="6dp"
+                            android:text="رسوم التوصيل : "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/deliveryPayment"
+                            android:id="@+id/deliveryPrice"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="ريال"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/prepareTime_Text"
+                            android:layout_marginRight="6dp"
+                            android:layout_toRightOf="@+id/prepareTime"
+                            android:textColor="@color/black"
+                            android:textSize="12dp"
+                            android:text="مدة تجهيز الطلب : "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/prepareTime"
+                            android:layout_marginLeft="20dp"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="دقيقه"/>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/gray"
+                        android:layout_below="@+id/Relative_payment"
+                        android:id="@+id/Relative_Time"
+                        android:layout_toLeftOf="@+id/food_image"
+                        android:layout_marginRight="6dp"
+                        android:gravity="right|center"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/dateText"
+                            android:layout_alignParentRight="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="6dp"
+                            android:text="تاريخ/وقت التسليم : "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/dateText"
+                            android:id="@+id/date"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="وصف التاريخ"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="20dp"
+                        android:background="@color/gray"
+                        android:layout_below="@+id/Relative_Time"
+                        android:id="@+id/Relative_address"
+                        android:layout_toLeftOf="@+id/food_image"
+                        android:layout_marginRight="6dp"
+                        android:gravity="right|center"
+                        android:layout_marginTop="6dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:id="@+id/addressText"
+                            android:layout_alignParentRight="true"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:layout_marginRight="6dp"
+                            android:text="العنوان : "/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_toLeftOf="@+id/addressText"
+                            android:id="@+id/address"
+                            android:textSize="12dp"
+                            android:textColor="@color/black"
+                            android:text="وصف العنوان"/>
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="47dp"
+                        android:layout_below="@+id/Relative_address"
+                        android:layout_marginTop="10dp"
+                        android:padding="3dp">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:weightSum="3"
+                            android:gravity="center">
+
+                            <LinearLayout
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="47dp"
+                                android:background="@drawable/button_shape_black"
+                                android:gravity="center"
+                                android:orientation="horizontal" >
+                                <TextView
+                                    style="?android:attr/buttonBarButtonStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="false"
+                                    android:textColor="#c1bfbf"
+                                    android:textStyle="bold"
+                                    android:textSize="18dp"
+                                    android:text="رفض" />
+                                <ImageView
+                                    style="?android:attr/buttonBarButtonStyle"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:clickable="false"
+                                    android:background="#0000"
+                                    android:src="@mipmap/refuse"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="100dp"
+                                android:layout_height="47dp"
+                                android:background="@drawable/button_shape_green"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal" >
+                                <TextView
+                                    style="?android:attr/buttonBarButtonStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="false"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="18dp"
+                                    android:text="قبول" />
+                                <ImageView
+                                    style="?android:attr/buttonBarButtonStyle"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:clickable="false"
+                                    android:background="#0000"
+                                    android:src="@mipmap/accept"/>
+                            </LinearLayout>
+                            <LinearLayout
+                                style="?android:attr/buttonBarButtonStyle"
+                                android:layout_width="160dp"
+                                android:layout_height="47dp"
+                                android:background="@drawable/button_shape_red"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:layout_marginLeft="6dp"
+                                android:orientation="horizontal" >
+                                <TextView
+                                    style="?android:attr/buttonBarButtonStyle"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:clickable="false"
+                                    android:textColor="#ffffff"
+                                    android:textStyle="bold"
+                                    android:textSize="18dp"
+                                    android:text="0582001124" />
+                                <ImageView
+                                    style="?android:attr/buttonBarButtonStyle"
+                                    android:layout_width="20dp"
+                                    android:layout_height="20dp"
+                                    android:clickable="false"
+                                    android:background="#0000"
+                                    android:src="@mipmap/call"/>
+                            </LinearLayout>
+
+                        </LinearLayout>
+                    </RelativeLayout>
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentLeft="true"
+                        android:layout_marginLeft="20dp"
+                        android:layout_marginTop="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="رقم الطلب :    "
+                            android:id="@+id/requestNumberText"
+                            android:layout_toRightOf="@+id/requestNumber"
+                            android:textSize="16dp"
+                            android:layout_alignParentLeft="true"
+                            android:textColor="@color/colorPrimary"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="5"
+                            android:id="@+id/requestNumber"
+                            android:layout_alignParentLeft="true"
+                            android:textSize="16dp"
+                            android:textColor="@color/colorPrimary"/>
+
+                    </RelativeLayout>
+                </RelativeLayout>
+            </RelativeLayout>
+        </RelativeLayout>
+
+    </android.support.v7.widget.CardView>

@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RegisterSeller.SignUpSellerCompleteActivity">
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:id="@+id/image_delivery"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/image_delivery"
+                android:text="الطلبات و التوصيل"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:id="@+id/textdelivery"
+                android:textStyle="bold"/>
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relative_DeliveryTime"
+                android:layout_below="@+id/textdelivery"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/register_view_border">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:id="@+id/spinnerDeliveryTime"
+                    android:layoutDirection="ltr"/>
+            </RelativeLayout>
+            <RelativeLayout
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="10dp"
+                android:id="@+id/relative_DeliveyMethod"
+                android:layout_below="@+id/relative_DeliveryTime"
+                android:layout_centerHorizontal="true"
+                android:background="@drawable/register_view_border">
+
+                <Spinner
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:id="@+id/spinnerDeliveyMethod"
+                    android:layoutDirection="ltr"/>
+            </RelativeLayout>
+
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:hint="الحد الأدنى للطلب"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:layout_centerHorizontal="true"
+                android:layout_below="@+id/relative_DeliveyMethod"
+                android:id="@+id/minimum"
+                android:background="@drawable/register_view_border" />
+            <EditText
+                android:layout_width="320dp"
+                android:layout_height="50dp"
+                android:hint="رسوم التوصيل"
+                android:padding="8dp"
+                android:layout_centerHorizontal="true"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/payment"
+                android:layout_below="@+id/minimum"
+                android:background="@drawable/register_view_border" />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="10dp"
+                android:layout_below="@+id/payment"
+                android:id="@+id/ImagedeliveryDetails"
+                android:layout_marginTop="20dp"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/ImagedeliveryDetails"
+                android:text="بيانات التوصيل"
+                android:layout_marginTop="20dp"
+                android:textColor="@color/black"
+                android:textSize="18dp"
+                android:layout_below="@+id/payment"
+                android:id="@+id/deliveryDetails"
+                android:textStyle="bold"/>
+
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:hint="الجوال"
+                android:padding="8dp"
+                android:layout_alignParentRight="true"
+                android:layout_marginRight="19dp"
+                android:layout_gravity="center"
+                android:layout_marginTop="10dp"
+                android:id="@+id/phone"
+                android:layout_below="@+id/deliveryDetails"
+                android:background="@drawable/register_view_border" />
+            <EditText
+                android:layout_width="150dp"
+                android:layout_height="50dp"
+                android:hint="الواتس اب"
+                android:padding="8dp"
+                android:layout_gravity="center"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:layout_toLeftOf="@+id/phone"
+                android:id="@+id/whats"
+                android:layout_below="@+id/deliveryDetails"
+                android:background="@drawable/register_view_border" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/phone"
+                android:layout_alignParentRight="true"
+                android:text="صورة المتجر"
+                android:layout_marginRight="10dp"
+                android:textSize="18dp"
+                android:id="@+id/shopImageText"
+                android:textColor="@color/black"
+                android:layout_marginTop="30dp"/>
+            <ImageView
+                android:layout_width="110dp"
+                android:layout_height="100dp"
+                android:layout_toLeftOf="@+id/shopImageText"
+                android:id="@+id/shopImage"
+                android:layout_marginRight="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/sofraimage"
+                android:layout_below="@+id/phone"/>
+            <Button
+                android:layout_width="320dp"
+                android:layout_height="40dp"
+                android:layout_below="@+id/shopImage"
+                android:layout_centerHorizontal="true"
+                android:background="@color/green"
+                android:text="تسجيل"
+                android:textColor="#ffffff"
+                android:layout_marginTop="15dp"
+                android:textSize="18dp"
+                android:textStyle="bold"/>
+        </RelativeLayout>
+    </ScrollView>
+</RelativeLayout>

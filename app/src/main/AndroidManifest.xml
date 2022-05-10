@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.mtador12.sofrabeta3">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme">
+        <activity
+            android:name=".Navigation.MainActivity"
+            android:label=""
+            android:theme="@style/AppTheme.NoActionBar" />
+        <activity android:name=".Navigation.BaseActivity" />
+        <activity android:name=".WelcomeScreen.WelcomeScreenActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".OrderFood.OrderFoodActivity" />
+        <activity android:name=".FoodMenu.FoodMenuActivity" />
+        <activity android:name=".Orders.OrdersActivity" />
+        <activity android:name=".Notify.NotifyActivity" />
+        <activity android:name=".NewOffer.NewOffersActivity" />
+        <activity android:name=".About.AboutAppActivity" />
+        <activity android:name=".CallUs.CallUsActivity" />
+        <activity android:name=".MenuFoodDetails.MenuFoodDetailsActivity" />
+        <activity android:name=".OrdersBasket.OrdersBasketActivity" />
+        <activity android:name=".RegisterCutomer.LoginActivity" />
+        <activity android:name=".RegisterCutomer.SignUpCustomerActivity" />
+        <activity android:name=".DetailsRequest.DetailsRequestActivity" />
+        <activity android:name=".Navigation.Base2Activity" />
+        <activity android:name=".FoodMenuSeller.FoodMenuSellerActivity" />
+        <activity android:name=".Products.ProductsActivity" />
+        <activity android:name=".AddProduct.AddProductActivity" />
+        <activity android:name=".GivenOrders.GivenOrdersActivity" />
+        <activity android:name=".Price.PriceActivity" />
+        <activity android:name=".MyOffers.MyOffersActivity" />
+        <activity android:name=".AddOffer.AddOfferActivity" />
+        <activity android:name=".RegisterSeller.LoginSellerActivity" />
+        <activity android:name=".RegisterSeller.SignUpSellerActivity" />
+        <activity android:name=".RegisterSeller.SignUpSellerCompleteActivity"></activity>
+    </application>
+
+</manifest>

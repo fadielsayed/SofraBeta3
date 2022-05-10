@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="horizontal"
+    android:layoutDirection="ltr"
+    android:gravity="center"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="100dp">
+
+
+    <LinearLayout
+        android:layout_marginTop="14dp"
+        android:layout_weight="1"
+        android:layout_marginRight="10dp"
+        android:layout_gravity="center"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="20dp">
+        <TextView
+            android:layout_weight="1"
+            android:text="6:30 مساء"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp" />
+
+        <ImageView
+            android:layout_gravity="center"
+            android:src="@mipmap/time"
+            android:layout_weight="0.5"
+            android:layout_width="12dp"
+            android:layout_height="12dp" />
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_marginRight="10dp"
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_height="100dp"
+        android:layout_weight="2"
+        >
+
+
+        <TextView
+            android:id="@+id/notifyname_ID"
+            android:layout_marginTop="35dp"
+            android:layout_width="wrap_content"
+            android:textStyle="bold"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:text="عنوان التنبيه يظهر هنا"
+             />
+
+       <LinearLayout
+           android:layout_marginRight="10dp"
+           android:layout_gravity="right"
+           android:orientation="horizontal"
+           android:layout_width="wrap_content"
+           android:layout_height="20dp">
+           <TextView
+               android:layout_weight="1"
+               android:text="السبت 4 يناير 2017"
+               android:layout_width="wrap_content"
+               android:layout_height="20dp" />
+
+           <ImageView
+               android:layout_gravity="center"
+               android:src="@mipmap/date"
+               android:layout_weight="0.5"
+               android:layout_width="12dp"
+               android:layout_height="12dp" />
+
+       </LinearLayout>
+
+    </LinearLayout>
+
+    <ImageView
+        android:layout_marginRight="10dp"
+        android:id="@+id/notifyimagee_ID"
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:layout_gravity="right|center"
+        android:src="@mipmap/home" />
+
+
+</LinearLayout>

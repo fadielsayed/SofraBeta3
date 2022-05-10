@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".AddProduct.AddProductActivity">
+
+
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="اسم المنتج"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="15dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/produce_name"
+        android:background="@drawable/register_view_border" />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="90dp"
+        android:hint="وصف مختصر"
+        android:padding="8dp"
+        android:gravity="start|right"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/description"
+        android:layout_below="@+id/produce_name"
+        android:background="@drawable/register_view_border" />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="السعر"
+        android:padding="8dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/description"
+        android:id="@+id/produce_price"
+        android:background="@drawable/register_view_border" />
+    <EditText
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:hint="مدة تجهيز الطلب"
+        android:padding="8dp"
+        android:layout_centerHorizontal="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="10dp"
+        android:id="@+id/period"
+        android:layout_below="@+id/produce_price"
+        android:background="@drawable/register_view_border" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/period"
+        android:layout_alignParentRight="true"
+        android:text="اضافة صورة المتجر"
+        android:layout_marginRight="10dp"
+        android:textSize="18dp"
+        android:id="@+id/shopImageText"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"/>
+    <ImageView
+        android:layout_width="110dp"
+        android:layout_height="100dp"
+        android:layout_toLeftOf="@+id/shopImageText"
+        android:id="@+id/ProduceImage"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="10dp"
+        android:background="@mipmap/basket"
+        android:layout_below="@+id/period"/>
+    <Button
+        android:layout_width="320dp"
+        android:layout_height="50dp"
+        android:layout_below="@+id/ProduceImage"
+        android:layout_centerHorizontal="true"
+        android:background="@color/green"
+        android:text="اضف"
+        android:layout_marginTop="15dp"
+        android:textStyle="bold"
+        android:textColor="#ffffff"
+        android:textSize="18dp"/>
+</RelativeLayout>

@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="110dp"
+    app:cardCornerRadius="6dp"
+    app:cardElevation="6dp">
+
+    <RelativeLayout
+        android:id="@+id/myRelativeSeller_ID"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/relative_food">
+
+            <ImageView
+                android:layout_width="90dp"
+                android:layout_height="90dp"
+                android:layout_marginTop="10dp"
+                android:layout_alignParentRight="true"
+                android:id="@+id/foodmenusellerimage_ID"
+                android:background="#ece9e9"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@+id/foodmenusellerimage_ID"
+                android:layout_marginTop="10dp"
+                android:text="اسم الاكل"
+                android:id="@+id/foodmenunameseller_ID"
+                android:layout_marginRight="6dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:textSize="18dp"/>
+
+            <TextView
+                android:id="@+id/food_details1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginTop="39dp"
+                android:layout_marginRight="6dp"
+                android:layout_toLeftOf="@+id/foodmenusellerimage_ID"
+                android:text="سانداوتش راب برجر"
+                android:textSize="12dp" />
+
+            <TextView
+                android:id="@+id/food_details2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/food_details1"
+                android:layout_marginTop="18dp"
+                android:layout_marginRight="7dp"
+                android:layout_toLeftOf="@+id/foodmenusellerimage_ID"
+                android:text="دجاج متبله"
+                android:textSize="12dp" />
+
+        </RelativeLayout>
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="السعر"
+                android:layout_centerHorizontal="true"
+                android:textSize="18dp"
+                android:layout_alignParentLeft="true"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:layout_marginLeft="25dp"
+                android:id="@+id/textPrice"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/textPrice"
+                android:text="20 ريال"
+                android:id="@+id/pricefoodmenuSeller_ID"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="3dp"
+                android:layout_alignParentLeft="true"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"/>
+
+        </RelativeLayout>
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

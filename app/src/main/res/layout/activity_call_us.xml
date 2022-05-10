@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".CallUs.CallUsActivity">
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <Button
+            android:text="استعلام"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="اقتراح"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+        <Button
+            android:text="شكوى"
+            android:layout_weight="1"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+
+    <EditText
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="الاسم كاملا ..."
+        />
+    <EditText
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" البريد الاكتروني ..."
+        />
+    <EditText
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint=" الجوال ..."
+        />
+    <EditText
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        />
+    <Button
+        android:layout_marginRight="30dp"
+        android:layout_marginLeft="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/green"
+        android:text="ارسال"
+        android:textColor="#fff"
+        android:textStyle="bold"
+        />
+
+    <LinearLayout
+        android:gravity="center"
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/facebook_ID"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/instagram"
+            android:layout_marginRight="15dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/twiter2_ID"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/twiter"
+            android:layout_marginRight="15dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/instagram2_ID"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:src="@mipmap/facebook"
+            android:layout_marginRight="15dp"
+            app:civ_border_width="2dp"
+            app:civ_border_color="#fff"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="تابعنا على ..."
+            android:textStyle="bold"
+            android:textSize="15sp"
+            />
+
+
+    </LinearLayout>
+
+</LinearLayout>

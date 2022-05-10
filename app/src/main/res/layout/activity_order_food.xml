@@ -1,0 +1,42 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context=".OrderFood.OrderFoodActivity"
+    tools:showIn="@layout/app_bar_main">
+
+    <LinearLayout
+        android:layoutDirection="ltr"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <SearchView
+            android:queryHint="البحث ..."
+            android:layout_weight="1"
+            android:id="@+id/orderfoodSearch_ID"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </SearchView>
+
+        <Spinner
+            android:layout_weight="1"
+            android:id="@+id/orderfoodSpinner_ID"
+            android:layoutDirection="rtl"
+            android:layout_width="match_parent"
+            android:layout_height="50dp">
+        </Spinner>
+    </LinearLayout>
+
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/orderfood_recycler">
+    </android.support.v7.widget.RecyclerView>
+
+
+</LinearLayout>

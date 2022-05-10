@@ -1,0 +1,15 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.example.mtador12.sofrabeta3.Navigation.MainActivity">
+    <item
+        android:id="@+id/basketmenu_ID"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/basket"
+        app:showAsAction="always" />
+    <item
+        android:id="@+id/backmenu_ID"
+        android:title="@string/action_settings"
+        android:icon="@mipmap/back"
+        app:showAsAction="always" />
+</menu>
